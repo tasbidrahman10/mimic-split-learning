@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+.env
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# Project Data (SENSITIVE)
+# Do NOT commit MIMIC-IV data to GitHub!
+datasets/
+data/
+outputs/
+
+# Large Models
+models/
+*.pt
+*.pth
+*.pkl
+
+# Logs
+*.log
