@@ -19,11 +19,7 @@ datasets/
 data/
 outputs/
 
-# Large Models (tracked - files are small enough for GitHub)
-# models/
-# *.pt
-# *.pth
-# *.pkl
+
 
 # Logs
 *.log
