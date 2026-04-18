@@ -1,0 +1,69 @@
+{
+  "best_agg_auroc": 0.9667,
+  "final_agg_auroc": 0.9667,
+  "final_agg_auprc": 0.8541,
+  "final_agg_f1": 0.7338,
+  "training_config": {
+    "num_rounds": 50,
+    "warmup_rounds": 10,
+    "batch_size": 64,
+    "lr_server": 0.0001,
+    "lr_encoder": 0.0001,
+    "weight_decay": 0.001,
+    "early_stop_patience": 8,
+    "max_pos_weight": 5.0
+  },
+  "clients": [
+    {
+      "id": 0,
+      "name": "medical",
+      "val_size": 7231,
+      "auroc": 0.9556,
+      "auprc": 0.8572,
+      "f1": 0.7418,
+      "sensitivity": 0.8395,
+      "specificity": 0.9186,
+      "precision": 0.6644,
+      "confusion_matrix": {
+        "tn": 5572,
+        "fp": 494,
+        "fn": 187,
+        "tp": 978
+      }
+    },
+    {
+      "id": 1,
+      "name": "surgical",
+      "val_size": 4697,
+      "auroc": 0.9678,
+      "auprc": 0.8635,
+      "f1": 0.7452,
+      "sensitivity": 0.8907,
+      "specificity": 0.935,
+      "precision": 0.6405,
+      "confusion_matrix": {
+        "tn": 3887,
+        "fp": 270,
+        "fn": 59,
+        "tp": 481
+      }
+    },
+    {
+      "id": 2,
+      "name": "cardiac",
+      "val_size": 6549,
+      "auroc": 0.9781,
+      "auprc": 0.8438,
+      "f1": 0.7169,
+      "sensitivity": 0.872,
+      "specificity": 0.9583,
+      "precision": 0.6086,
+      "confusion_matrix": {
+        "tn": 5842,
+        "fp": 254,
+        "fn": 58,
+        "tp": 395
+      }
+    }
+  ]
+}
